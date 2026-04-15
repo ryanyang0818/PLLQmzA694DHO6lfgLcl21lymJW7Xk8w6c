@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日語學習筆記：大家的日本語 初級 第四課 單字篇</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e293b',
+                        accent: '#0d9488', // Muted Teal
+                        softBg: '#f8fafc',
+                        cardBg: 'rgba(255, 255, 255, 0.8)',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'Noto Sans TC', 'Noto Sans JP', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            background: radial-gradient(circle at top right, #f1f5f9 0%, #f8fafc 100%);
+            color: #334155;
+            line-height: 1.7;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .glass-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08);
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 3rem;
+            height: 4px;
+            background: #0d9488;
+            margin-top: 0.5rem;
+            border-radius: 2px;
+        }
+        .kana-hint {
+            font-size: 0.8rem;
+            color: #64748b;
+        }
+        .grid-layout {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1rem;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen">
+
+    <!-- Header Section -->
+    <header class="pt-12 pb-8 px-6 text-center">
+        <div class="max-w-4xl mx-auto">
+            <span class="inline-block px-4 py-1 mb-4 text-xs font-semibold tracking-widest text-teal-700 uppercase bg-teal-100 rounded-full">
+                Video Lesson Notes
+            </span>
+            <h1 class="text-3xl md:text-5xl font-bold text-slate-800 leading-tight">
+                📚 日語學習筆記：<span class="text-teal-600">大家的日本語 初級 第四課 單字篇</span>
+            </h1>
+            <div class="mt-6 flex items-center justify-center space-x-4 text-slate-500 text-sm">
+                <span class="flex items-center">
+                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    第 4 課
+                </span>
+                <span class="flex items-center">
+                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"></path></svg>
+                    動詞與時間
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 pb-24 space-y-16">
+
+        <!-- 一、文法重點 -->
+        <section id="grammar">
+            <h2 class="section-title text-2xl font-bold text-slate-800 mb-8">一、文法重點</h2>
+            <div class="glass-card rounded-2xl p-8 space-y-8">
+                <p class="text-slate-600 leading-relaxed italic">本課為初次接觸到日語的「動詞」，影片中針對動詞及相關詞性標示進行了初步的文法觀念建立：</p>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-3">
+                        <h3 class="text-lg font-semibold text-teal-700 flex items-center">
+                            <span class="w-2 h-2 bg-teal-500 rounded-full mr-2"></span>
+                            動詞的兩種基本形態標示
+                        </h3>
+                        <ul class="space-y-2 text-slate-700 text-sm md:text-base">
+                            <li class="pl-4 border-l-2 border-slate-200">
+                                <strong>ます形（如：起きます）：</strong> 日常較常使用的敬體表現形式，也是單字表放在最前面的型態。
+                            </li>
+                            <li class="pl-4 border-l-2 border-slate-200">
+                                <strong>辭書形/基本形（如：起きる）：</strong> 動詞最原始、最基本的形態。在字典中查詢時是以此形態出現。
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="space-y-3">
+                        <h3 class="text-lg font-semibold text-teal-700 flex items-center">
+                            <span class="w-2 h-2 bg-teal-500 rounded-full mr-2"></span>
+                            動詞的分類標示
+                        </h3>
+                        <p class="text-slate-700 text-sm md:text-base bg-slate-50 p-4 rounded-xl border border-slate-100">
+                            單字表中動詞後方標示的「羅馬數字（I、II、III）」或「直線」，代表該動詞的類別。這是日後學習動詞變化非常重要的依據。
+                        </p>
+                    </div>
+
+                    <div class="space-y-3">
+                        <h3 class="text-lg font-semibold text-teal-700 flex items-center">
+                            <span class="w-2 h-2 bg-teal-500 rounded-full mr-2"></span>
+                            助詞預習
+                        </h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-white border border-teal-100 px-3 py-1 rounded-lg text-sm shadow-sm"><strong>と：</strong> 和（並列）</span>
+                            <span class="bg-white border border-teal-100 px-3 py-1 rounded-lg text-sm shadow-sm"><strong>から：</strong> 從（起點）</span>
+                            <span class="bg-white border border-teal-100 px-3 py-1 rounded-lg text-sm shadow-sm"><strong>まで：</strong> 到（終點）</span>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3">
+                        <h3 class="text-lg font-semibold text-teal-700 flex items-center">
+                            <span class="w-2 h-2 bg-teal-500 rounded-full mr-2"></span>
+                            代名詞用法延伸
+                        </h3>
+                        <p class="text-slate-700 text-sm md:text-base">
+                            除了表示方向（這裡、那裡、那裡）之外，也可以作為禮貌用語來指代「人」（這位、那位）。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 二、單字整理 -->
+        <section id="vocabulary">
+            <h2 class="section-title text-2xl font-bold text-slate-800 mb-8">二、單字整理</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Data injected via loop or list -->
+                <script>
+                    const words = [
+                        ["今", "いま", "現在"], ["～時", "～じ", "～點"], ["～分", "～ふん／ぷん", "～分"],
+                        ["毎朝", "まいあさ", "每天早晨"], ["起きます", "おきます (おきる)", "起床 (二類)"],
+                        ["昨日", "きのう", "昨天"], ["勉強します", "べんきょうします", "學習 (三類)"],
+                        ["何時", "なんじ", "幾點"], ["何分", "なんぷん", "幾分 (半濁音)"],
+                        ["ニューヨーク", "ニューヨーク", "紐約"], ["午前", "ごぜん", "上午"],
+                        ["休み", "やすみ", "休息、休假"], ["何曜日", "なんようび", "星期幾"],
+                        ["月曜日", "げつようび", "星期一"], ["火曜日", "かようび", "星期二"],
+                        ["水曜日", "すいようび", "星期三"], ["木曜日", "もくようび", "星期四"],
+                        ["金曜日", "きんようび", "星期五"], ["土曜日", "どようび", "星期六"],
+                        ["日曜日", "にちようび", "星期日"], ["と", "と", "和～ (助詞)"],
+                        ["アップル銀行", "あっぷるぎんこう", "蘋果銀行"], ["から", "から", "從～"],
+                        ["まで", "まで", "到～"], ["毎晩", "まいばん", "每天晚上"],
+                        ["寝ます", "ねます (ねる)", "睡覺 (二類)"], ["毎日", "まいにち", "每天"],
+                        ["朝", "あさ", "早晨"], ["午後", "ごご", "下午"],
+                        ["働きます", "はたらきます", "工作 (一類)"], ["そちら", "そちら", "那邊 (禮貌)"],
+                        ["あした", "あした", "明天"], ["おととい", "おととい", "前天"],
+                        ["東京", "とうきょう", "東京"], ["ロンドン", "ロンドン", "倫敦"],
+                        ["ロサンゼルス", "ロサンゼルス", "洛杉磯"], ["今日", "きょう", "今天"],
+                        ["会議", "かいぎ", "會議"], ["試験", "しけん", "考試"],
+                        ["銀行", "ぎんこう", "銀行"], ["郵便局", "ゆうびんきょく", "郵局"],
+                        ["デパート", "デパート", "百貨商店"], ["スーパー", "スーパー", "超市"],
+                        ["図書館", "としょかん", "圖書館"], ["今晩", "こんばん", "今晚"],
+                        ["昼", "ひる", "白天、中午"], ["休みます", "やすみます", "休息 (一類)"],
+                        ["晩 (夜)", "ばん (よる)", "晚上 / 夜晚"], ["あさって", "あさって", "後天"],
+                        ["今朝", "けさ", "今天早上"], ["大和美術館", "やまとびじゅつかん", "大和美術館"],
+                        ["緑図書館", "みどりとしょかん", "綠色圖書館"], ["終わります", "おわります", "結束 (一類)"],
+                        ["映画", "えいが", "電影"], ["大変ですね", "たいへんですね", "真辛苦啊"],
+                        ["美術館", "びじゅつかん", "美術館"], ["番號", "ばんごう", "號碼"],
+                        ["何番", "なんばん", "幾號"], ["半", "はん", "半 (時間)"],
+                        ["晝休み", "ひるやすみ", "午休"], ["銀行員", "ぎんこういん", "銀行職員"],
+                        ["電話番號", "でんわばんごう", "電話號碼"]
+                    ];
+
+                    const container = document.querySelector('#vocabulary .grid');
+                    words.forEach(w => {
+                        const card = document.createElement('div');
+                        card.className = 'glass-card p-4 rounded-xl border-l-4 border-l-teal-500 flex flex-col justify-center';
+                        card.innerHTML = `
+                            <div class="flex justify-between items-start mb-1">
+                                <span class="font-bold text-slate-800 text-lg">${w[0]}</span>
+                                <span class="text-xs bg-slate-100 px-2 py-0.5 rounded-full text-slate-500">N5</span>
+                            </div>
+                            <span class="kana-hint mb-2">${w[1]}</span>
+                            <div class="text-sm text-slate-600 font-medium border-t border-slate-50 pt-2">${w[2]}</div>
+                        `;
+                        container.appendChild(card);
+                    });
+                </script>
+            </div>
+        </section>
+
+        <!-- 三、例句整理 -->
+        <section id="examples">
+            <h2 class="section-title text-2xl font-bold text-slate-800 mb-8">三、例句整理</h2>
+            <div class="space-y-4">
+                <dl class="grid gap-4">
+                    <div class="glass-card p-6 rounded-2xl group">
+                        <dt class="text-xl font-medium text-slate-800 mb-2 group-hover:text-teal-700 transition-colors">ただいま、今（帰りました）。</dt>
+                        <dd class="text-slate-500 pl-4 border-l-2 border-teal-100">我回來了，現在回來了。</dd>
+                    </div>
+                    <div class="glass-card p-6 rounded-2xl group">
+                        <dt class="text-xl font-medium text-slate-800 mb-2 group-hover:text-teal-700 transition-colors">そちらは～さんです。</dt>
+                        <dd class="text-slate-500 pl-4 border-l-2 border-teal-100">那位是～先生/小姐。</dd>
+                    </div>
+                    <div class="glass-card p-6 rounded-2xl group">
+                        <dt class="text-xl font-medium text-slate-800 mb-2 group-hover:text-teal-700 transition-colors">今夜は月が綺麗ですね。</dt>
+                        <dd class="text-slate-500 pl-4 border-l-2 border-teal-100">今晚的月色真美啊。（日本文學名句）</dd>
+                    </div>
+                    <div class="glass-card p-6 rounded-2xl group">
+                        <dt class="text-xl font-medium text-slate-800 mb-2 group-hover:text-teal-700 transition-colors">ここで終わります。</dt>
+                        <dd class="text-slate-500 pl-4 border-l-2 border-teal-100">在這裡結束。</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <!-- 四、教學補充重點 -->
+        <section id="extra">
+            <h2 class="section-title text-2xl font-bold text-slate-800 mb-8">四、教學補充重點</h2>
+            <div class="bg-teal-900 text-teal-50 rounded-3xl p-8 md:p-12 shadow-xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-8 opacity-10">
+                    <svg class="w-32 h-32" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                </div>
+                <div class="grid md:grid-cols-2 gap-10 relative z-10">
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="text-teal-300 font-bold mb-2 uppercase tracking-wide text-sm">時間的讀法</h3>
+                            <p class="text-sm leading-relaxed">4點（よじ）、7點（しちじ）、9點（くじ）是特殊發音。分的部分，1、3、4、6、8、10分皆有促音或半濁音變化。</p>
+                        </div>
+                        <div>
+                            <h3 class="text-teal-300 font-bold mb-2 uppercase tracking-wide text-sm">日期相對律</h3>
+                            <p class="text-sm leading-relaxed">一昨日 (おととい) → 昨日 (きのう) → 今日 (きょう) → 明日 (あした) → 明後日 (あさって)。</p>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="text-teal-300 font-bold mb-2 uppercase tracking-wide text-sm">發音易錯點</h3>
+                            <p class="text-sm leading-relaxed">「図書館（としょかん）」沒有長音；「映画（えいが）」注意漢字與讀音的對應。</p>
+                        </div>
+                        <div>
+                            <h3 class="text-teal-300 font-bold mb-2 uppercase tracking-wide text-sm">星期記憶法</h3>
+                            <p class="text-sm leading-relaxed">依照「月、火、水、木、金、土、日」的順序記憶。搭配外來語單字如「デパート」一同記憶效率更高。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 五、時間軸整理 -->
+        <section id="timeline">
+            <h2 class="section-title text-2xl font-bold text-slate-800 mb-8">五、時間軸整理</h2>
+            <div class="glass-card rounded-2xl overflow-hidden">
+                <ol class="divide-y divide-slate-100">
+                    <li class="p-4 hover:bg-white flex items-center transition-colors">
+                        <span class="w-24 text-xs font-mono text-teal-600 font-bold">00:00 - 00:51</span>
+                        <span class="text-slate-700 text-sm">開場介紹與第四課學習目標</span>
+                    </li>
+                    <li class="p-4 hover:bg-white flex items-center transition-colors">
+                        <span class="w-24 text-xs font-mono text-teal-600 font-bold">00:52 - 02:23</span>
+                        <span class="text-slate-700 text-sm">時間相關單字解說</span>
+                    </li>
+                    <li class="p-4 hover:bg-white flex items-center transition-colors">
+                        <span class="w-24 text-xs font-mono text-teal-600 font-bold">02:24 - 06:19</span>
+                        <span class="text-slate-700 text-sm">動詞概念重點建立（ます形與辭書形）</span>
+                    </li>
+                    <li class="p-4 hover:bg-white flex items-center transition-colors">
+                        <span class="w-24 text-xs font-mono text-teal-600 font-bold">06:20 - 07:22</span>
+                        <span class="text-slate-700 text-sm">時間名詞與動詞實際運用</span>
+                    </li>
+                    <li class="p-4 hover:bg-white flex items-center transition-colors">
+                        <span class="w-24 text-xs font-mono text-teal-600 font-bold">07:23 - 08:37</span>
+                        <span class="text-slate-700 text-sm">疑問詞與外來語名詞解說</span>
+                    </li>
+                    <li class="p-4 hover:bg-white flex items-center transition-colors">
+                        <span class="w-24 text-xs font-mono text-teal-600 font-bold">08:38 - 10:47</span>
+                        <span class="text-slate-700 text-sm">星期的說法（月曜日～日曜日）</span>
+                    </li>
+                    <li class="p-4 hover:bg-white flex items-center transition-colors">
+                        <span class="w-24 text-xs font-mono text-teal-600 font-bold">10:48 - 12:05</span>
+                        <span class="text-slate-700 text-sm">星期與數字的結合運用</span>
+                    </li>
+                    <li class="p-4 hover:bg-white flex items-center transition-colors">
+                        <span class="w-24 text-xs font-mono text-teal-600 font-bold">12:06 - 15:07</span>
+                        <span class="text-slate-700 text-sm">助詞與日常動詞介紹</span>
+                    </li>
+                    <li class="p-4 hover:bg-white flex items-center transition-colors">
+                        <span class="w-24 text-xs font-mono text-teal-600 font-bold">15:08 - 18:59</span>
+                        <span class="text-slate-700 text-sm">相對時間名詞與代名詞用法</span>
+                    </li>
+                    <li class="p-4 hover:bg-white flex items-center transition-colors">
+                        <span class="w-24 text-xs font-mono text-teal-600 font-bold">19:00 - 20:18</span>
+                        <span class="text-slate-700 text-sm font-semibold text-teal-800">★ 重要圖表：時間「點」的讀法</span>
+                    </li>
+                    <li class="p-4 hover:bg-white flex items-center transition-colors">
+                        <span class="w-24 text-xs font-mono text-teal-600 font-bold">20:19 - 24:05</span>
+                        <span class="text-slate-700 text-sm font-semibold text-teal-800">★ 重要圖表：時間「分」的讀法與練習</span>
+                    </li>
+                    <li class="p-4 hover:bg-white flex items-center transition-colors">
+                        <span class="w-24 text-xs font-mono text-teal-600 font-bold">24:06 - 26:25</span>
+                        <span class="text-slate-700 text-sm">地名與更多時間名詞</span>
+                    </li>
+                    <li class="p-4 hover:bg-white flex items-center transition-colors">
+                        <span class="w-24 text-xs font-mono text-teal-600 font-bold">26:26 - 29:04</span>
+                        <span class="text-slate-700 text-sm">地點名詞與工作相關動詞</span>
+                    </li>
+                    <li class="p-4 hover:bg-white flex items-center transition-colors">
+                        <span class="w-24 text-xs font-mono text-teal-600 font-bold">29:05 - 33:48</span>
+                        <span class="text-slate-700 text-sm">日常名詞與情緒表達短語</span>
+                    </li>
+                    <li class="p-4 hover:bg-white flex items-center transition-colors">
+                        <span class="w-24 text-xs font-mono text-teal-600 font-bold">33:49 - 36:25</span>
+                        <span class="text-slate-700 text-sm font-semibold text-teal-800">★ 相對時間總複習圖表</span>
+                    </li>
+                    <li class="p-4 hover:bg-white flex items-center transition-colors">
+                        <span class="w-24 text-xs font-mono text-teal-600 font-bold">36:26 - 40:03</span>
+                        <span class="text-slate-700 text-sm">最後補充與結語</span>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        // Smooth scroll implementation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Simple entrance animation
+        window.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('section');
+            sections.forEach((el, index) => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(20px)';
+                el.style.transition = `opacity 0.6s ease-out ${index * 0.15}s, transform 0.6s ease-out ${index * 0.15}s`;
+                setTimeout(() => {
+                    el.style.opacity = '1';
+                    el.style.transform = 'translateY(0)';
+                }, 100);
+            });
+        });
+    </script>
+</body>
+</html>
